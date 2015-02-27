@@ -5,10 +5,11 @@
 # 2. Checkout source: git@github.com:gasi/docker-node-hello.git
 # 3. Build container: docker build .
 
-FROM    centos:6.4
+FROM    centos:centos7
 
 # Enable EPEL for Node.js
-RUN     rpm -Uvh http://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm
+#RUN     rpm -Uvh http://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm
+RUN     rpm -Uvh http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-5.noarch.rpm
 # Install Node.js and npm
 RUN     yum install -y npm
 
